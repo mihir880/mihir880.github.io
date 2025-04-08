@@ -1,0 +1,686 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Work Experience</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.highlight-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.block-color-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: undefined; }
+.select-value-color-pink { background-color: rgba(225, 136, 179, 0.27); }
+.select-value-color-purple { background-color: rgba(168, 129, 197, 0.27); }
+.select-value-color-green { background-color: rgba(123, 183, 129, 0.27); }
+.select-value-color-gray { background-color: rgba(84, 72, 49, 0.15); }
+.select-value-color-transparentGray { background-color: undefined; }
+.select-value-color-translucentGray { background-color: undefined; }
+.select-value-color-orange { background-color: rgba(224, 124, 57, 0.27); }
+.select-value-color-brown { background-color: rgba(210, 162, 141, 0.35); }
+.select-value-color-red { background-color: rgba(244, 171, 159, 0.4); }
+.select-value-color-yellow { background-color: rgba(236, 191, 66, 0.39); }
+.select-value-color-blue { background-color: rgba(93, 165, 206, 0.27); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="328dec1e-32e0-4212-b5e5-5bc50f53082f" class="page sans"><header><img class="page-cover-image" src="https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?ixlib=rb-4.0.3&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb" style="object-position:center 72.06%"/><div class="page-header-icon page-header-icon-with-cover"><span class="icon">💻</span></div><h1 class="page-title">Work Experience</h1><p class="page-description"></p></header><div class="page-body"><p id="1c2d5358-a6f9-8042-b28c-d777fbe03597" class=""><a href="Work%20Experience%20328dec1e32e04212b5e55bc50f53082f.html">Web Development Intern</a></p><p id="2d451318-374a-4890-aacc-b414cbda27b6" class=""><strong><a href="Work%20Experience%20328dec1e32e04212b5e55bc50f53082f.html">Graduate Student Assistant</a></strong></p><p id="a345758d-29a0-4d43-8fd0-fddd21dc81c1" class=""><strong><a href="Work%20Experience%20328dec1e32e04212b5e55bc50f53082f.html">Senior Software Engineer</a></strong></p><p id="e5b0bf63-99a5-4da9-903e-fa8deffbcade" class=""><strong><a href="Work%20Experience%20328dec1e32e04212b5e55bc50f53082f.html">Software Engineer</a></strong><div class="indented"><p id="0e43c717-0705-415b-81b2-cd9046ebb70e" class=""><strong><a href="Work%20Experience%20328dec1e32e04212b5e55bc50f53082f.html">Technology and Tools</a></strong> ⚙</p></div></p><h3 id="1c2d5358-a6f9-80cf-b59d-c09f8f02cf69" class=""><em>Web Development Intern</em> @ United Nations Development Programme</h3><p id="1c2d5358-a6f9-80bf-80e1-cb67ee045b21" class="">January 2025 - Present</p><ul id="1c2d5358-a6f9-801c-8257-f4f962e25a25" class="bulleted-list"><li style="list-style-type:disc">Implemented an automated Figma-to-SCSS token extraction pipeline, establishing enterprise-wide design system consistency and streamlining the design-to-code workflow.</li></ul><ul id="1c2d5358-a6f9-80d2-89f3-c868448d4d52" class="bulleted-list"><li style="list-style-type:disc">Engineered data-attribute-based initialization system, eliminating manual function calls and automating component detection while standardizing Storybook implementation.</li></ul><h3 id="f0bc8727-55f3-4ea7-ad48-dae0618666cc" class=""><em>Graduate Student Assistant</em> @San Diego State University</h3><p id="321bd724-88e5-4047-978d-b8908b8934db" class="">August 2023 - Present</p><ul id="8bff271d-52da-4eff-a49a-857f6159145b" class="bulleted-list"><li style="list-style-type:disc">Developed data-driven A/B tests on process automation that identified optimal retrieval methods, reducing search time from 20 minutes to 2 seconds and improving document retrieval efficiency by 99%.</li></ul><ul id="8acfe731-7aa5-4519-ad3a-1a5e50edab25" class="bulleted-list"><li style="list-style-type:disc">Created data-driven KPIs for procurement processes which improved operational efficiency by 30% and enhanced cross-system integration transparency.</li></ul><h3 id="320960d9-ef84-4330-90f8-85b5c552c585" class=""><em><strong>Senior Software Engineer </strong></em><strong>@Infosys Limited</strong></h3><p id="0f90b94a-2cbf-400d-b16e-0bf619d1cf81" class="">August 2021 - July 2023</p><ul id="94823295-bc69-4a5d-9115-bfa282a1632e" class="bulleted-list"><li style="list-style-type:disc">Implemented an end-to-end product strategy, involving product roadmapping, prioritization, and execution of a Map view web application displaying counties impacted by hazardous weather 7 days in advance for potential power shut-offs.</li></ul><ul id="1d376b43-2c96-43a9-869b-d97b1e6dee21" class="bulleted-list"><li style="list-style-type:disc">Led programming efforts for ‘Search’ and ‘trend analysis based article suggestion’ features while collaborating with cross-functional teams from conception to execution, improving user satisfaction ratings by 15%.</li></ul><ul id="5a62abab-c2eb-49d9-9ef0-8c3f35d7db34" class="bulleted-list"><li style="list-style-type:disc">Directed agile-scrum rituals, overseeing Scrum Planning, Daily Standup, Sprint Review, Backlog Refinement, and Sprint Retrospective, resulting in delivery of 30+ client requirements, encompassing phases of the Software Development Life Cycle.</li></ul><h3 id="c9a0a56a-6d2b-4855-ad83-5a95a9512b07" class=""><em><strong>Software Engineer </strong></em><strong>@Infosys Limited</strong></h3><p id="387f7ad6-2c1f-4e69-a49e-2f30efbfa147" class="">August 2019 - July 2021</p><ul id="703554f5-ea9b-4905-ab86-9c2bdee435b9" class="bulleted-list"><li style="list-style-type:disc">Developed responsive, multilingual, WCAG-compliant pages using React.JS, integrating Adobe Analytics and RESTful APIs to improve web application accessibility, lowering frustration scores by 28%.</li></ul><ul id="a7e2790b-bcc7-4226-a4d1-efbd1a10bb55" class="bulleted-list"><li style="list-style-type:disc">Created a resource center web application using React.js, RESTful APIs, and Drupal, enabling customers to seek guidance related to SCE.com web applications, resulting in a 60% increase in query resolution and a 40% reduction in customer complaints.</li></ul><ul id="37f9a4ab-175c-4773-8d7d-f964a3890ca5" class="bulleted-list"><li style="list-style-type:disc">Built 5+ documentation sets, including Product Requirements Document (PRD), Business Requirements Document (BRD), and Efforts Estimation to standardize documentation for a project team of 20+ developers, data engineers, and program managers.</li></ul><h3 id="26e3fbc3-7347-4730-950e-53d83aefe6de" class="">Technology and Tools</h3><div id="43f5e386-527e-440b-8086-2efb2b3b2d93" class="column-list"><div id="48e754f4-c663-444d-be9e-5b6df8c7e6c8" style="width:100%" class="column"><ul id="abd475d3-df85-4c2c-bd08-d82317c1b247" class="bulleted-list"><li style="list-style-type:disc">React.js, Next.js, Redux, JavaScript, jQuery</li></ul><ul id="adce3470-683f-4686-a2ed-675eb40c768b" class="bulleted-list"><li style="list-style-type:disc"> Python, Java Spring Framework, PHP</li></ul><ul id="a11f4316-4156-4a2f-9c15-911c7e0a6fcf" class="bulleted-list"><li style="list-style-type:disc">MySQL, MongoDB, Redis</li></ul><ul id="6207ef0f-61f1-409e-b301-9a3dd8228d3e" class="bulleted-list"><li style="list-style-type:disc">Jira, GitHub, </li></ul><ul id="529e235b-683b-4bd8-ab56-b4f2f893b07e" class="bulleted-list"><li style="list-style-type:disc">HTML/CSS, WCAG</li></ul><ul id="b7f357d3-2339-41ae-b375-3e9d0ec1c8ed" class="bulleted-list"><li style="list-style-type:disc">AWS EC2, AWS Serverless Computing</li></ul><ul id="b9b44702-eff5-4b3d-b32b-b5b9978dc0d8" class="bulleted-list"><li style="list-style-type:disc">PowerBI, Tableau</li></ul><p id="0ed7da6e-20ce-4664-9d7a-1a9869a55e97" class="">
+</p><h2 id="b60a07ff-329e-483b-bf54-85e01a2f5fc1" class="">Get in Touch!</h2></div><div id="c4749620-9045-4393-9732-9e86fbcab9e9" style="width:100%" class="column"><ul id="fa8091e5-5036-40cf-9d9f-406c78aa40b2" class="bulleted-list"><li style="list-style-type:disc">Adobe Analytics</li></ul><ul id="7da75117-3456-4254-a03e-4ca343775926" class="bulleted-list"><li style="list-style-type:disc">Exploratory data analysis, Data wrangling, Data normalization</li></ul><ul id="3c198f1e-c043-4bb0-905a-04d2dedee941" class="bulleted-list"><li style="list-style-type:disc">Feature selection, Data modeling, Model selection, and evaluation</li></ul><ul id="8db70224-6a3f-469d-adbc-2bbaa166595c" class="bulleted-list"><li style="list-style-type:disc">Pandas, NumPy, Matplotlib, Seaborn, Plotly, SciPy, Scikit-learn, TensorFlow</li></ul><ul id="a1506cc4-e60a-4da2-8767-d7b64adfd0e0" class="bulleted-list"><li style="list-style-type:disc">Machine Learning Algorithms</li></ul><p id="4cdb9ab2-50bd-4bf0-9337-6ebc608afc5c" class="">
+</p></div></div><p id="1e013cee-b973-4a07-845b-20b7f0e81b20" class=""><mark class="highlight-blue"><strong>🤙 </strong></mark><mark class="highlight-blue"><a href="http://www.linkedin.com/in/mihir-kulkarni3">LinkedIn</a></mark><mark class="highlight-blue"><strong> → </strong></mark><mark class="highlight-blue"><strong><a href="http://www.linkedin.com/in/mihir-kulkarni3">www.linkedin.com/in/mihir-kulkarni3</a></strong></mark></p><p id="e7f43eeb-5e5e-460a-905b-bd6ea16907fe" class=""><mark class="highlight-orange"><strong>📨 </strong></mark><mark class="highlight-orange"><a href="mailto:mkulkarni7993@sdsu.edu">Email Me</a></mark><mark class="highlight-orange"><strong> → </strong></mark><mark class="highlight-orange"><strong><a href="mailto:mkulkarni7993@sdsu.edu">mkulkarni7993@sdsu.edu</a></strong></mark></p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
